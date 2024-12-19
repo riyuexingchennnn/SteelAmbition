@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    app:layoutDescription="@xml/activity_loadpage_scene2">
+
+    <ImageButton
+        android:id="@+id/signalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/button1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="请 输 入 IP 地 址"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/multiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:srcCompat="@mipmap/button1"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="请输入IP地址如192.168.0.1"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="  未命名"
+        android:alpha="0.6"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:background="@color/gray_low"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signaltextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单机驾驶"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/signalButton"
+        app:layout_constraintTop_toTopOf="@id/signalButton"
+        app:layout_constraintBottom_toBottomOf="@id/signalButton"
+        app:layout_constraintRight_toRightOf="@id/signalButton"/>
+
+    <TextView
+        android:id="@+id/multitextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多人竞技"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/multiButton"
+        app:layout_constraintTop_toTopOf="@id/multiButton"
+        app:layout_constraintBottom_toBottomOf="@id/multiButton"
+        app:layout_constraintRight_toRightOf="@id/multiButton"/>
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:alpha="0.6"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/setting"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

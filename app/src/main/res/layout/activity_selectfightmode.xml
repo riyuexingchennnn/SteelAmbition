@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_heavy">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray_low"
+        android:gravity="center"
+        android:text="选择对战模式"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/teal_700"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="@id/titleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageButton
+        android:id="@+id/teamFightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/gray_heavy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        app:srcCompat="@mipmap/team_fight" />
+
+    <ImageButton
+        android:id="@+id/gongfangButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:background="@color/gray_heavy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        android:src="@mipmap/gongfang" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="团 队 乱 斗"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintLeft_toLeftOf="@+id/teamFightButton"
+        app:layout_constraintRight_toRightOf="@+id/teamFightButton"
+        app:layout_constraintTop_toTopOf="@+id/teamFightButton"
+        app:layout_constraintBottom_toBottomOf="@+id/teamFightButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="团 队 攻 防"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintLeft_toLeftOf="@+id/gongfangButton"
+        app:layout_constraintRight_toRightOf="@+id/gongfangButton"
+        app:layout_constraintTop_toTopOf="@+id/gongfangButton"
+        app:layout_constraintBottom_toBottomOf="@+id/gongfangButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

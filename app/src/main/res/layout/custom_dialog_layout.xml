@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_heavy">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="提示\n是否退出钢铁雄心？"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <ImageButton
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleX="0.6"
+        android:scaleY="0.5"
+        android:src="@mipmap/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cancelButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageTextView" />
+
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleX="0.6"
+        android:scaleY="0.5"
+        android:src="@mipmap/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/confirmButton"
+        app:layout_constraintTop_toBottomOf="@+id/messageTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确  认"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/confirmButton"
+        app:layout_constraintLeft_toLeftOf="@id/confirmButton"
+        app:layout_constraintRight_toRightOf="@id/confirmButton"
+        app:layout_constraintTop_toTopOf="@id/confirmButton" />
+
+    <TextView
+        android:id="@+id/cancelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取  消"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/cancelButton"
+        app:layout_constraintTop_toTopOf="@id/cancelButton"
+        app:layout_constraintBottom_toBottomOf="@id/cancelButton"
+        app:layout_constraintRight_toRightOf="@id/cancelButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

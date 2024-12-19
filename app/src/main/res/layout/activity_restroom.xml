@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestroomActivity"
+    android:background="@color/gray_heavy">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray_low"
+        android:gravity="center"
+        android:text="XXX 模式"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/teal_700"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="@id/titleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageButton
+        android:id="@+id/changeteamButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleX="0.8"
+        android:scaleY="0.5"
+        android:src="@mipmap/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/readyButton" />
+
+    <ImageButton
+        android:id="@+id/readyButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleX="0.8"
+        android:scaleY="0.5"
+        android:src="@mipmap/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/readytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="准 备"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/readyButton"
+        app:layout_constraintTop_toTopOf="@id/readyButton"
+        app:layout_constraintBottom_toBottomOf="@id/readyButton"
+        app:layout_constraintRight_toRightOf="@id/readyButton"/>
+
+    <TextView
+        android:id="@+id/changetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换 边"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/changeteamButton"
+        app:layout_constraintTop_toTopOf="@id/changeteamButton"
+        app:layout_constraintBottom_toBottomOf="@id/changeteamButton"
+        app:layout_constraintRight_toRightOf="@id/changeteamButton"/>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@color/gray_low"
+        android:gravity="center"
+        android:text="自 定 义"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/changeteamButton"
+        app:layout_constraintRight_toRightOf="@id/readyButton"
+        app:layout_constraintTop_toBottomOf="@id/titleView" />
+
+    <ScrollView
+        android:id="@+id/teaminfo"
+        android:layout_width="400dp"
+        android:layout_height="370dp"
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/changeteamButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="红  队"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+
+            <TextView
+                android:id="@+id/user1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1.XXXX(未准备)"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/red_lowlow"/>
+
+            <TextView
+                android:id="@+id/user2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="2.XXXX(未准备)"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/red_low"/>
+
+            <TextView
+                android:id="@+id/user3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="3.XXXX(未准备)"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/red_lowlow"/>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="蓝  队"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/blue"/>
+
+            <TextView
+                android:id="@+id/user4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="1.XXXX(未准备)"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/blue_lowlow"/>
+
+            <TextView
+                android:id="@+id/user5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="2.XXXX(未准备)"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/blue_low"/>
+
+            <TextView
+                android:id="@+id/user6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="3.XXXX(未准备)"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/blue_lowlow"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
